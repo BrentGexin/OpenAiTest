@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+
+    <b> Property Description</b>
+    <textarea id ="response" rows="10" cols="50" >
+    Enter text here...</textarea>
+    
+    
+    <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Generate Content</a>
+    
+    <div id="modal-center" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+    
+          <form>
+        <fieldset class="uk-fieldset">
+          <legend class="uk-legend">Generate Content</legend>
+              <div class="uk-margin">
+                <textarea name="prompt" class="uk-textarea" rows="5" placeholder="..ask a question" aria-label="Textarea"></textarea>
+                <button type="submit">Submit</button>
+              </div>
+           </fieldset>
+    </form>
+    
+        </div>
+    </div>
+
+    <div id="app">
+      <div id="chat_container"></div>
+
+  
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
